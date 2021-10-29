@@ -1,0 +1,65 @@
+/* purgecss start ignore */
+@import 'fonts.css';
+
+@tailwind base;
+@tailwind components;
+
+/* purgecss end ignore */
+
+@import 'swiper.css';
+
+html, body {
+  font-size: 14px;
+}
+
+.container {
+  @apply max-w-screen-2xl mx-auto;
+  width: 90%;
+}
+
+.portable-text > * {
+  @apply mb-4;
+}
+
+.portable-text > *:last-child {
+  @apply mb-0;
+}
+
+.portable-text a:link {
+  @apply underline;
+}
+/*
+@screen sm {
+
+}
+
+@screen md {
+
+}
+
+@screen lg {
+
+}
+
+@screen xl {
+
+}
+*/
+@tailwind utilities;
+
+@layer utilities {
+  .underline-under {
+    text-underline-position: under;
+  }
+
+  @variants responsive {
+    .text-columns-2 {
+      column-count: 2;
+      column-gap: 2rem;
+    }
+    .text-columns-3 {
+      column-count: 3;
+      column-gap: 2rem;
+    }
+  }
+}
