@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import 'styles/globals.css'
+import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import * as gtag from 'utils/gtag'
-import { AppProvider } from 'utils/store'
+import * as gtag from '../utils/gtag'
+import { AppProvider } from '../utils/store'
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter()
