@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import Container from 'components/Container'
+import Container from './Container'
 
 const Footer: React.FC = () => {
   return (

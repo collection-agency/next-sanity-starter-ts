@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { urlFor } from 'utils/sanity'
+import { urlFor } from '../utils/sanity'
 import { useRouter } from 'next/router'
 
 const Seo = ({config, doc}: {

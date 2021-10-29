@@ -1,21 +1,21 @@
-import { getClient } from 'utils/sanity'
-import { configQuery } from 'utils/queries'
+import { getClient } from '../utils/sanity'
+import { configQuery } from '../utils/queries'
 import groq from 'groq'
 import Link from 'next/link'
 
 import type { NextPage } from 'next'
 
-import Layout from 'components/Layout'
-import Seo from 'components/Seo'
-import Container from 'components/Container'
+import Layout from '../components/Layout'
+import Seo from '../components/Seo'
+import Container from '../components/Container'
 
 const query = groq`
   *[_type == 'post']
 `
-
+console.log(process.env.NODE_ENV)
 const Landing: NextPage<{
-  docs: any
-  config: any
+  docs?: any
+  config?: any
 }> = ({ docs, config }) => {
   return (
     <Layout>
