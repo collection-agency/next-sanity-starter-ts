@@ -12,7 +12,7 @@ import Container from '../components/Container'
 const query = groq`
   *[_type == 'post']
 `
-console.log(process.env.NODE_ENV)
+
 const Landing: NextPage<{
   docs?: any
   config?: any
