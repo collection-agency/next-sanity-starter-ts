@@ -6,7 +6,7 @@
 
 /* purgecss end ignore */
 
-@import 'swiper.css';
+@import 'swiper/css';
 
 html, body {
   font-size: 14px;
