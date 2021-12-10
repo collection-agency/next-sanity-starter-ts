@@ -46,20 +46,3 @@ html, body {
 }
 */
 @tailwind utilities;
-
-@layer utilities {
-  .underline-under {
-    text-underline-position: under;
-  }
-
-  @variants responsive {
-    .text-columns-2 {
-      column-count: 2;
-      column-gap: 2rem;
-    }
-    .text-columns-3 {
-      column-count: 3;
-      column-gap: 2rem;
-    }
-  }
-}
