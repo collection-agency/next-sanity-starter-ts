@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 import * as gtag from '../utils/gtag'
 import { AppProvider } from '../utils/store'
 
@@ -18,9 +19,15 @@ const App = ({ Component, pageProps }: AppProps) => {
   }, [router.events])
 
   return (
-    <AppProvider>
-      <Component {...pageProps} />
-    </AppProvider>
+    <>
+      <Head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+      </Head>
+      <AppProvider>
+        <Component {...pageProps} />
+      </AppProvider>
+    </>
+    
   )
 }
 
